@@ -1,8 +1,11 @@
 version: 0.2
-AWS_DEFAULT_REGION: cn-north-1
-IMAGE_REPO_NAME: cicd-ecr-poc
-IMAGE_TAG: latest
-AWS_ACCOUNT_ID: 727524944624
+env:
+  variables:
+    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
+    AWS_DEFAULT_REGION: "cn-north-1"
+    IMAGE_REPO_NAME: "cicd-ecr-poc"
+    IMAGE_TAG: "latest"
+    AWS_ACCOUNT_ID: "727524944624"
 
 phases:
   pre_build:
