@@ -14,7 +14,7 @@ RUN chown -R www-data:www-data /var/www
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
-ENV BUILD_VERSION 101
+ENV BUILD_DISPLAY_NAME 101
 
 EXPOSE 80
 
